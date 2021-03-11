@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_img_head"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/tony_romas"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintStart_toStartOf="@id/layout_img_head"
+            app:layout_constraintTop_toTopOf="@id/layout_img_head"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/arrow"/>
+
+        <TextView
+            android:id="@+id/tv_menu_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/layout_img_head"
+            app:layout_constraintBottom_toBottomOf="@id/layout_img_head"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="80dp"
+            android:height="41dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="36sp"
+            android:lineSpacingMultiplier="1.29"
+            tools:text="Tony Roma's"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/layout_img_head"
+            app:layout_constraintBottom_toBottomOf="@id/layout_img_head"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:height="42dp"
+            android:textColor="#FF5A6978"
+            android:textSize="36sp"
+            android:gravity="top"
+            android:lineSpacingMultiplier="1.29"
+            tools:text="Pratos principais"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_img_head" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
