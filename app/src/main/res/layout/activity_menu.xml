@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="@id/layout_img_head"
             android:layout_marginStart="24dp"
             android:layout_marginTop="9dp"
-            android:src="@drawable/arrow"/>
+            android:background="@drawable/arrow"/>
 
         <TextView
             android:id="@+id/tv_menu_title"
@@ -48,6 +48,7 @@
             tools:text="Tony Roma's"/>
 
         <TextView
+            android:id="@+id/tv_menu_recycle"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             app:layout_constraintStart_toStartOf="@id/layout_img_head"
@@ -59,7 +60,7 @@
             android:textSize="36sp"
             android:gravity="top"
             android:lineSpacingMultiplier="1.29"
-            tools:text="Pratos principais"/>
+            android:text="@string/main_dishes"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="@id/layout_img_detail"
             android:layout_marginStart="24dp"
             android:layout_marginTop="9dp"
-            android:src="@drawable/arrow"/>
+            android:background="@drawable/arrow"/>
 
         <TextView
             android:id="@+id/tv_detail_title"
