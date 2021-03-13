@@ -34,7 +34,7 @@ class HomeActivity: AppCompatActivity() {
 
         restaurantList.add(Restaurant(R.drawable.tony_romas,"Tony Roma's","Av. Lavandisca, 717 - Indianópolis, São Paulo","Fecha às 22:00"))
         restaurantList.add(Restaurant(R.drawable.aoyama,"Aoyama - Moema","Alameda dos Arapanés, 532 - Moema","Fecha às 00:00"))
-        restaurantList.add(Restaurant(R.drawable.outback,"Outback - Moema","Av. Moaci, 187, 187 - Moema, São Paulo","Fecha às 00:00"))
+        restaurantList.add(Restaurant(R.drawable.outback,"Outback - Moema","Av. Moaci, 187 - Moema, São Paulo","Fecha às 00:00"))
         restaurantList.add(Restaurant(R.drawable.sisenor,"Sí Señor!","Alameda Jauaperi, 626 - Moema","Fecha às 01:00"))
         return restaurantList
     }

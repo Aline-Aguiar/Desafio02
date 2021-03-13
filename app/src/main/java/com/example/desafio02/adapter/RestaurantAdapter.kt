@@ -20,6 +20,7 @@ class RestaurantAdapter(private val restaurantList: MutableList<Restaurant>): Re
     override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
         val imgRest = holder.imgRestaurant
         imgRest.setImageResource(restaurantList[position].imgRest)
+        imgRest.clipToOutline = true
 
         val restName = holder.tvRestaurant
         restName.text =restaurantList[position].nameRest

@@ -27,22 +27,21 @@
             android:id="@+id/img_arrow_detail"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            app:layout_constraintStart_toStartOf="@id/layout_img_detail"
-            app:layout_constraintTop_toTopOf="@id/layout_img_detail"
             android:layout_marginStart="24dp"
             android:layout_marginTop="9dp"
-            android:background="@drawable/arrow"/>
+            android:background="@drawable/arrow1"
+            app:layout_constraintStart_toStartOf="@id/img_head_detail"
+            app:layout_constraintTop_toTopOf="@id/img_head_detail" />
 
         <TextView
             android:id="@+id/tv_detail_title"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/layout_img_detail"
-            app:layout_constraintBottom_toBottomOf="@id/layout_img_detail"
-            android:layout_marginStart="24dp"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="@id/img_head_detail"
+            app:layout_constraintBottom_toBottomOf="@id/img_head_detail"
+            android:layout_marginStart="15dp"
             android:layout_marginBottom="4dp"
-            android:height="41dp"
-            android:textColor="#FFFFFFFF"
+            android:textColor="#000000"
             android:textSize="27sp"
             android:lineSpacingMultiplier="1.29"
             tools:text="Salada com molho Gengibre"/>
@@ -52,12 +51,13 @@
     <TextView
         android:id="@+id/tv_detail"
         android:layout_height="wrap_content"
-        android:layout_width="390dp"
+        android:layout_width="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_img_detail"
         android:layout_marginTop="24dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:textColor="#FF8492A6"
         android:textSize="18sp"
         tools:text="Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."/>

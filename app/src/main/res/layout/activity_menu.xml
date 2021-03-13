@@ -5,62 +5,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_img_head"
         android:layout_width="match_parent"
-        android:layout_height="415dp"
+        android:layout_height="295dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/img_head"
             android:layout_width="match_parent"
-            android:layout_height="342dp"
+            android:layout_height="255dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:background="@drawable/tony_romas"/>
+            tools:background="@drawable/tony_romas" />
 
         <ImageView
             android:id="@+id/img_arrow"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            app:layout_constraintStart_toStartOf="@id/layout_img_head"
-            app:layout_constraintTop_toTopOf="@id/layout_img_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="9dp"
-            android:background="@drawable/arrow"/>
+            android:layout_marginTop="35dp"
+            android:background="@drawable/arrow"
+            app:layout_constraintStart_toStartOf="@id/layout_img_head"
+            app:layout_constraintTop_toTopOf="@id/layout_img_head" />
 
         <TextView
             android:id="@+id/tv_menu_title"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/layout_img_head"
-            app:layout_constraintBottom_toBottomOf="@id/layout_img_head"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="80dp"
-            android:height="41dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="65dp"
+            android:layout_marginStart="10dp"
+            android:lineSpacingMultiplier="1.29"
             android:textColor="#FFFFFFFF"
             android:textSize="36sp"
-            android:lineSpacingMultiplier="1.29"
-            tools:text="Tony Roma's"/>
+            app:layout_constraintBottom_toBottomOf="@id/layout_img_head"
+            app:layout_constraintStart_toStartOf="@id/layout_img_head"
+            tools:text="Tony Roma's" />
 
         <TextView
             android:id="@+id/tv_menu_recycle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/layout_img_head"
-            app:layout_constraintBottom_toBottomOf="@id/layout_img_head"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="10dp"
-            android:height="42dp"
-            android:textColor="#FF5A6978"
-            android:textSize="36sp"
+            android:paddingStart="15dp"
             android:gravity="top"
             android:lineSpacingMultiplier="1.29"
-            android:text="@string/main_dishes"/>
+            android:text="@string/main_dishes"
+            android:textColor="#FF5A6978"
+            android:textSize="36sp"
+            android:background="#FFFFFFFF"
+            app:layout_constraintBottom_toBottomOf="@id/layout_img_head"
+            app:layout_constraintStart_toStartOf="@id/layout_img_head" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

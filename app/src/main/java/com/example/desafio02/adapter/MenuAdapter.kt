@@ -20,6 +20,7 @@ class MenuAdapter(private val menuList:MutableList<Menu>):RecyclerView.Adapter<M
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         val imgMenu = holder.imgMenu
         imgMenu.setImageResource(menuList[position].imgMenu)
+        imgMenu.clipToOutline=true
 
         val menuName = holder.tvMenu
         menuName.text = menuList[position].nameMenu

@@ -13,6 +13,5 @@ class RestaurantViewHolder(view:View):RecyclerView.ViewHolder(view){
     val tvRestaurant by lazy { view.findViewById<TextView>(R.id.tv_name) }
     val tvAddress by lazy { view.findViewById<TextView>(R.id.tv_address) }
     val tvHour by lazy { view.findViewById<TextView>(R.id.tv_hour) }
-    val cardRestaurant by lazy { view.findViewById<CardView>(R.id.card_view) }
 
 }

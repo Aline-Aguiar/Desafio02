@@ -6,6 +6,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.desafio02.adapter.MenuAdapter
@@ -35,9 +36,9 @@ class MenuActivity : AppCompatActivity() {
 
         val dishes = getDishes()
 
-        recyclerMenu.layoutManager= LinearLayoutManager(this)
+        //recyclerMenu.layoutManager= LinearLayoutManager(this)
 
-        //recyclerMenu.layoutManager= GridLayoutManager(this,2)
+        recyclerMenu.layoutManager= GridLayoutManager(this,2)
 
         val adapterMenu = MenuAdapter(dishes)
 
@@ -47,16 +48,16 @@ class MenuActivity : AppCompatActivity() {
     private fun getDishes(): MutableList<Menu> {
         val menuList = mutableListOf<Menu>()
 
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
-        menuList.add(Menu(R.drawable.aoyama,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        menuList.add(Menu(R.drawable.tony_romas,"Salada com Molho Gengibre","Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
         return menuList
     }
 
