@@ -12,6 +12,7 @@ class DetailMenuActivity: AppCompatActivity() {
     val imgHeadDetail by lazy { findViewById<ImageView>(R.id.img_head_detail) }
     val tvNameDetail by lazy { findViewById<TextView>(R.id.tv_detail_title) }
     val tvDescriptDetail by lazy { findViewById<TextView>(R.id.tv_detail) }
+    val imgArrowDetail by lazy { findViewById<ImageView>(R.id.img_arrow_detail) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,10 @@ class DetailMenuActivity: AppCompatActivity() {
             initViews(infoDetail)
         }else{
             Toast.makeText(this, "Erro ao carregar informações do prato", Toast.LENGTH_LONG).show()
+        }
+
+        imgArrowDetail.setOnClickListener {
+            onBackPressed()
         }
     }
 

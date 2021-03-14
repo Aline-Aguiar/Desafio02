@@ -16,34 +16,34 @@
 
         <ImageView
             android:id="@+id/img_head_detail"
-            android:layout_width="match_parent"
+            android:layout_width="610dp"
             android:layout_height="342dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"
             tools:background="@drawable/aoyama"/>
 
         <ImageView
             android:id="@+id/img_arrow_detail"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="9dp"
-            android:background="@drawable/arrow1"
-            app:layout_constraintStart_toStartOf="@id/img_head_detail"
-            app:layout_constraintTop_toTopOf="@id/img_head_detail" />
+            android:layout_marginTop="24dp"
+            android:background="@drawable/arrow"
+            app:layout_constraintStart_toStartOf="@id/layout_img_detail"
+            app:layout_constraintTop_toTopOf="@id/layout_img_detail" />
 
         <TextView
             android:id="@+id/tv_detail_title"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            app:layout_constraintStart_toStartOf="@id/img_head_detail"
-            app:layout_constraintBottom_toBottomOf="@id/img_head_detail"
+            app:layout_constraintStart_toStartOf="@id/layout_img_detail"
+            app:layout_constraintBottom_toBottomOf="@id/layout_img_detail"
             android:layout_marginStart="15dp"
             android:layout_marginBottom="4dp"
-            android:textColor="#000000"
+            android:textColor="#FFFFFFFF"
             android:textSize="27sp"
-            android:lineSpacingMultiplier="1.29"
             tools:text="Salada com molho Gengibre"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

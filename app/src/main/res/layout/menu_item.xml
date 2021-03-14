@@ -27,6 +27,8 @@
                 android:layout_height="115dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="center"
                 android:background="@drawable/my_back_item_menu"
                 tools:srcCompat="@tools:sample/avatars" />
 
